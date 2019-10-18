@@ -1,5 +1,5 @@
 {
-  "name": "download",
+  "name": "awesome-downloader",
   "version": "1.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/xiunen/download.git",
@@ -14,5 +14,8 @@
   },
   "scripts": {
     "test": "NODE_ENV=test jest src --coverage"
-  }
+  },
+  "files": [
+    "src/*"
+  ]
 }

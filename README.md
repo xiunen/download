@@ -2,7 +2,7 @@
 下载组件
 
 ```javascript
-  import {downloadCSV} from 'awesome-download'
+  import {downloadCSV} from 'awesome-downloader'
   downloadCSV(
     '/download', //required
     {
