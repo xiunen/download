@@ -1,0 +1,18 @@
+{
+  "name": "download",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/xiunen/download.git",
+  "author": "Abot Chen <xiunen@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-fetch-mock": "^2.1.2"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test jest src --coverage"
+  }
+}
