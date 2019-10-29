@@ -1,6 +1,6 @@
 {
   "name": "awesome-downloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "repository": "https://github.com/xiunen/download.git",
   "author": "Abot Chen <xiunen@163.com>",

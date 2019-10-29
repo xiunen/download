@@ -40,6 +40,14 @@ csv输出列描述，格式如:
 
 **params**: response 服务端响应体
 
+#### options.queryTransformer:Fucntion=(query)=>{}
+
+对query参数进行转换
+
+**return**  {}
+
+**params** query 请求参数， 包括 offset和limit
+
 ### options.onUpdate:Function=({data:Array, total:Number})=>{}
 
 **data**: 所有已经从服务端拉回来的数据

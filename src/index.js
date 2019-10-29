@@ -23,6 +23,7 @@ export const downloadCSV = (url, {
   query = {},
   columns, //[{title,dataIndex,render(){}}]
   responseTransfomer,
+  queryTransformer,
   onUpdate = ({ data, total }) => { } //({totalSize, currentSize})=>{}
 }) => {
   const perUpdate = ({ data, total, finished }) => {
@@ -32,5 +33,5 @@ export const downloadCSV = (url, {
       download(filename || 'download.csv', csvStringify(data, columns))
     }
   }
-  requestController(url, { ...query, limit: perPage }, perUpdate, responseTransfomer)
+  requestController(url, { ...query, limit: perPage }, perUpdate, responseTransfomer, queryTransformer)
 }
