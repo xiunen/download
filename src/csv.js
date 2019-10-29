@@ -30,7 +30,7 @@ export default (data, columns) => {
 
   const content = data.map(item => {
     return cols.map(({ dataIndex, render }) => {
-      const itemResult = render ? render(item[dataIndex]) : item[dataIndex]
+      const itemResult = render ? render(item[dataIndex], item) : item[dataIndex]
       return escapeString(itemResult)
     }).join(',')
   }).join('\n')

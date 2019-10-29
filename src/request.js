@@ -18,7 +18,8 @@ export const fetchData = (url, { offset = 0, limit = 100, ...rest } = {}, done, 
       }
     }
     return res;
-  }).then(res => done(res)).catch((e) => {
+  }).then(done).catch((e) => {
+    console.warn(e);
     fetchData(url, { offset, limit, ...rest } = {}, done, responseTransformer)
   })
 }
